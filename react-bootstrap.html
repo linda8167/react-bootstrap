@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.8/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.8/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.28.5/react-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <!--[if lt IE 9]>
+<script>
+(function(){
+  var ef = function(){};
+  window.console = window.console || {log:ef,warn:ef,error:ef,dir:ef};
+}());
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-sham.js"></script>
+<![endif]-->
+    <!-- babel-->
+</head>
+
+<body>
+    <div id="example"></div>
+    <div id="example2"></div>
+    <script type="text/babel">
+        var ButtonToolbar = ReactBootstrap.ButtonToolbar;
+        var Button = ReactBootstrap.Button;
+        const buttonsInstance = (
+        <ButtonToolbar>
+            {/* Standard button */}
+            <Button>Default</Button>
+            {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
+            <Button bsStyle="primary">Primary</Button>
+            {/* Indicates a successful or positive action */}
+            <Button bsStyle="success">Success</Button>
+            {/* Contextual button for informational alert messages */}
+            <Button bsStyle="info">Info</Button>
+            {/* Indicates caution should be taken with this action */}
+            <Button bsStyle="warning">Warning</Button>
+            {/* Indicates a dangerous or potentially negative action */}
+            <Button bsStyle="danger">Danger</Button>
+            {/* Deemphasize a button by making it look like a link while maintaining button behavior */}
+            <Button bsStyle="link">Link</Button>
+        </ButtonToolbar>
+        ); ReactDOM.render(buttonsInstance, document.getElementById('example')); ReactDOM.render(
+        <h1>Hello, world!</h1>, document.getElementById('example2') );
+    </script>
+</body>
+
+</html>
